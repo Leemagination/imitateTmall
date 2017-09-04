@@ -1,25 +1,25 @@
 /**
  * Created by LI on 2017/8/17.
  */
-
+/*页面顶部导航栏的下拉菜单js*/
     var  myTB = document.getElementById("myTB");
-    var test = document.getElementById("test");
+    var mytaobao = document.getElementById("mytaobao");
     myTB.addEventListener("mouseover",function () {
-        test.style.display = "block";
+        mytaobao.style.display = "block";
         myTB.style.borderBottom = "1px solid white";
         myTB.style.backgroundColor = "white";
         myTB.style.borderLeft = "1px solid #E5E5E5";
         myTB.style.borderRight = "1px solid #E5E5E5";
     });
-    test.addEventListener("mouseleave",function () {
-        test.style.display = "none";
+    mytaobao.addEventListener("mouseleave",function () {
+        mytaobao.style.display = "none";
         myTB.style.borderBottom = "1px solid #E5E5E5";
         myTB.style.backgroundColor = "rgb(242, 242, 242)";
         myTB.style.borderLeft = "1px solid rgb(242, 242, 242)";
         myTB.style.borderRight = "1px solid rgb(242, 242, 242)";
     });
     myTB.addEventListener("mouseleave",function () {
-        test.style.display = "none";
+        mytaobao.style.display = "none";
         myTB.style.borderBottom = "1px solid #E5E5E5";
         myTB.style.backgroundColor = "rgb(242, 242, 242)";
         myTB.style.borderLeft = "1px solid rgb(242, 242, 242)";
@@ -27,23 +27,23 @@
     });
 
     var  mySC = document.getElementById("mySC");
-    var  test2 = document.getElementById("test2");
+    var  mycollection = document.getElementById("mycollection");
     mySC.addEventListener("mouseover",function () {
-        test2.style.display = "block";
+        mycollection.style.display = "block";
         mySC.style.borderBottom = "1px solid white";
         mySC.style.backgroundColor = "white";
         mySC.style.borderLeft = "1px solid #E5E5E5";
         mySC.style.borderRight = "1px solid #E5E5E5";
     });
-    test2.addEventListener("mouseleave",function () {
-        test2.style.display = "none";
+    mycollection.addEventListener("mouseleave",function () {
+        mycollection.style.display = "none";
         mySC.style.borderBottom = "1px solid #E5E5E5";
         mySC.style.backgroundColor = "rgb(242, 242, 242)";
         mySC.style.borderLeft = "none";
         mySC.style.borderRight = "none";
     });
     mySC.addEventListener("mouseleave",function () {
-        test2.style.display = "none";
+        mycollection.style.display = "none";
         mySC.style.borderBottom = "1px solid #E5E5E5";
         mySC.style.backgroundColor = "rgb(242, 242, 242)";
         mySC.style.borderLeft = "1px solid rgb(242, 242, 242)";

@@ -1,6 +1,7 @@
 /**
  * Created by LI on 2017/9/2.
  */
+/*   有关页面滚动的js*/
 var goTOP = document.getElementById("goTOP");
 var goTOP2 = document.getElementById("goTOP2");
 var goELECTRONICS = document.getElementById("goELECTRONICS");
@@ -16,6 +17,11 @@ var TOPTmall = document.getElementById("TOP-Tmall");
 var TOPcombine = document.getElementById("TOP-combine");
 
 window.onscroll = function () {
+    if(document.body.scrollTop>=400){
+        TOPnav.style.display = "block";
+    }else{
+        TOPnav.style.display = "none";
+    }
     if(document.body.scrollTop>=700){
         TOPnav.style.height = "50px";
         TOPTmall.style.visibility = "visible";

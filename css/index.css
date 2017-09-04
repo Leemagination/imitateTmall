@@ -58,7 +58,7 @@ ul {
     border-right: 1px solid rgb(242, 242, 242);
 }
 
-#test {
+#mytaobao {
     position: absolute;
     top: 31px;
     left: -1px;
@@ -70,7 +70,7 @@ ul {
     width: 100px;
 }
 
-#test2 {
+#mycollection {
     position: absolute;
     top: 31px;
     left: -1px;
@@ -301,6 +301,7 @@ ul {
     background-color: rgba(232, 0, 0, 0.8);
     z-index: 19;
     transition: all ease 0.2s;
+    display: none;
 }
 #TOP-search{
     width:1230px;
@@ -312,7 +313,8 @@ ul {
     font-family: 圆体;
     font-size: 30px;
     font-weight:600;
-    float: left;
+    position:absolute;
+    top:4px;
     visibility: hidden;
 }
 #TOP-combine{

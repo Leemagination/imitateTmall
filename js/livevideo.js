@@ -1,6 +1,7 @@
 /**
  * Created by LI on 2017/8/29.
  */
+/*  直播部分的js*/
 var primaryWindow = document.getElementById("primaryWindow");
 var primaryBG = document.getElementById("primaryBG");
 var liveBTN = document.getElementById("liveBTN");

@@ -1,6 +1,7 @@
 /**
  * Created by LI on 2017/8/29.
  */
+/*直播部分右侧的广告 换一批动画 js*/
 var changeBTN = document.getElementById("changeG");
 var group = 1;
 var AVTlist = document.getElementsByClassName("AVT-list");

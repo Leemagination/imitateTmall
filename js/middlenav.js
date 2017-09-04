@@ -1,6 +1,7 @@
 /**
  * Created by LI on 2017/8/18.
  */
+/*   轮播图左侧的导航栏的延迟检测js*/
 var navlist = document.getElementsByClassName("navlist");
 var nav3 = document.getElementById("nav3");
 var middlenav = document.getElementsByClassName("middlenav");
@@ -81,7 +82,9 @@ for (let i = 0; i < navlist.length; i++) {
             delay = needDelay(elem,leftCorner,currMousePos);
         }
         if(delay == false) {
-
+            if(timer){
+                clearTimeout(timer);
+            }
             middlediv.style.display = "block"
             middlenav[i].style.display = "block";
 

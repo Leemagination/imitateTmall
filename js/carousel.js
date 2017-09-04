@@ -1,7 +1,7 @@
 /**
  * Created by LI on 2017/8/18.
  */
-
+/*轮播图js*/
 var Lnumber = 2;
 var photo = document.getElementsByClassName("photo");
 var picturelist = document.getElementsByClassName("picturelist");
