@@ -79,21 +79,30 @@ window.onscroll = function () {
 var scroll = function (topvalue) {
     var i = 1;
     var UPscroll = function () {
-        if (document.body.scrollTop <= topvalue) {
-            clearInterval(scrollmove);
-        }
         window.scrollBy(0, -50);
+        if (document.body.scrollTop <= topvalue) {
+
+            clearInterval(scrollmove);
+            window.scrollTo(0,topvalue);
+        }
+
     }
     var DOWNscroll = function () {
-        if (document.body.scrollTop >= topvalue) {
-            clearInterval(scrollmove);
-        }
         window.scrollBy(0, 50);
+        if (document.body.scrollTop >= topvalue) {
+
+            clearInterval(scrollmove);
+            window.scrollTo(0,topvalue);
+        }
+
     }
     if (document.body.scrollTop > topvalue) {
         var scrollmove = setInterval(UPscroll, 1);
     } else {
-        var scrollmove = setInterval(DOWNscroll, 1)
+        if(document.body.scrollTop < topvalue){
+            var scrollmove = setInterval(DOWNscroll, 1);
+        }
+
     }
 }
 
