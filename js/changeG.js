@@ -25,7 +25,7 @@ changeBTN.addEventListener("click", function () {
                 AVTlist[i].style.transform = "rotateY(90deg)";
             }, time * 100)
             setTimeout(function () {
-                AVTlist[i].firstElementChild.src = "img/advertisement/secondG/" + (i + 1) + ".webp";
+                AVTlist[i].firstElementChild.src = "img/advertisement/secondG/" + (i + 1) + ".jpg";
                 AVTlist[i].style.transform = "rotateY(0deg)";
             }, 200 + time * 100)
         }
@@ -34,7 +34,7 @@ changeBTN.addEventListener("click", function () {
                 AVTlist[i].style.transform = "rotateY(90deg)";
             }, time * 100)
             setTimeout(function () {
-                AVTlist[i].firstElementChild.src = "img/advertisement/firstG/" + (i + 1) + ".webp";
+                AVTlist[i].firstElementChild.src = "img/advertisement/firstG/" + (i + 1) + ".jpg";
                 AVTlist[i].style.transform = "rotateY(0deg)";
             }, 200 + time * 100)
         }
